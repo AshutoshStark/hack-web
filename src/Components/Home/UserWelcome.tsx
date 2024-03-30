@@ -8,29 +8,29 @@ const UserWelcome = () => {
 
   return (
     <Container>
-        <p>
+
+<p className='heading_style'>Blockchain and Web-3</p>
         <TypeIt
         options={{
-            strings: [`Web development is essentially the process of building websites and web applications. It covers everything from the initial planning and design to the writing of code and putting the site up on the internet.<br/> 
-
-            Here's a breakdown of what web development involves:<br/>
-            
-            * **Creating the visual elements:** This includes designing the layout, user interface, and overall look and feel of the website. While web design focuses on the aesthetics, web development translates those designs into code.<br/>
-            * **Writing code:**  This involves writing markup and scripts to make the website function. Common languages used in web development include HTML, CSS, and JavaScript.<br/>
-            * **Backend development:** This deals with the server-side of the website, the part users don't directly see. It involves things like storing data, handling user interactions, and ensuring the website functions properly.<br/>
-            * **Content management:**  This involves adding, editing, and maintaining the content on the website.<br/>
-            
-            Web development is a broad field, and there are different specializations within it. Here are a couple of the most common ones:<br/>
-            
-            * **Front-end development:** This focuses on the user-facing part of the website, what users see and interact with directly.<br/>
-            * **Back-end development:** This deals with the server-side of the website, the part that runs behind the scenes to make everything work.<br/>
-            
-            If you're interested in learning more about web development, there are many resources available online and in libraries. You can also find coding bootcamps and other courses that can teach you the skills you need to become a web developer.<br/>`],
+            strings: [`Blockchain and Web 3 are intertwined concepts shaping the future of the internet. Here's a quick breakdown:
+            <br><br>
+            Blockchain: Imagine a public ledger everyone can see but no one can tamper with. That's a blockchain in essence. It's a secure distributed database that stores information in "blocks" chained together chronologically. Cryptocurrencies like Bitcoin use blockchain to track ownership transparently.
+            <br><br>
+            Web 3:  The current internet (Web 2.0) is dominated by large companies controlling your data. Web 3 aims to be more decentralized, giving users more control. Blockchain plays a key role here. Imagine owning your online identity and data, and interacting with applications directly, without a middleman.
+            <br><br>
+            Here's how they connect:
+            <br><br>
+            Decentralization: Blockchain facilitates a peer-to-peer web, where users interact directly, cutting out centralized control.
+            Ownership: Web 3 leverages blockchain to give users ownership of their data and digital assets.
+            Security: Blockchain's tamper-proof nature enhances security and trust in Web 3 applications.
+            Think of it this way: Web 2.0 is like renting an apartment from a landlord. Web 3 is like owning your own home, with blockchain acting as the secure deed.
+            <br><br>
+            It's early days: Web 3 is still under development, but it has the potential to revolutionize how we interact online.  Think secure online marketplaces, censorship-resistant communication, and a more democratic internet.`],
             speed: 1,
             waitUntilVisible: true,
         }}
         />
-        </p>
+      
     </Container>
   )
 }
@@ -38,22 +38,34 @@ const UserWelcome = () => {
 const Container = styled.div`
 p{
     height: 80%;
-    color: white;
+    color: #ffffff;
 }
-font-size: .8rem;
+font-size: 1rem;
 padding: 1rem;
-width: 75vw;
-color: white;
+width: 65vw;
+color: #ffffff;
 height: 65vh;
-background: rgba( 255, 129, 17, 0.15 );
+margin: 5px;
+/* background: rgba( 144, 19, 254, 0.6 ); */
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 10px );
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 display: flex;
+flex-direction: column;
 align-items: center;
-flex-direction: row;
+overflow-y: scroll;
+
+.heading_style{
+  text-align: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #ffffff;
+}
 `
 
 export default UserWelcome

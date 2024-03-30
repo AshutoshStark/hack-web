@@ -58,17 +58,17 @@ height: auto;
 a{
   
   flex-direction: row;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 10vw;
     height: 5vh;
     text-decoration: none;
-    color: wheat;
+    color: #ffffff;
     margin: 1rem 0 0 0rem;
     padding: .5rem;
-    background: rgba( 255, 129, 17, 0.4 );
+    /* background: rgba( 255, 129, 17, 0.4 ); */
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
@@ -82,7 +82,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-    background: rgba( 31, 145, 228, 0.55 );
+    /* background: rgba( 31, 145, 228, 0.55 ); */
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
@@ -95,7 +95,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   flex-direction: column;
   width: 15vw;
   height: 90vh;
-  background: rgba( 255, 129, 17, 0.15 );
+  /* background: rgba( 255, 129, 17, 0.15 ); */
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 7.5px );
 -webkit-backdrop-filter: blur( 7.5px );
@@ -108,7 +108,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     justify-content: center;
   }
   a{
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,7 +118,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     color: wheat;
     margin: 1rem 0 0 0rem;
     padding: .5rem;
-    background: rgba( 255, 129, 17, 0.6 );
+    /* background: rgba( 255, 129, 17, 0.6 ); */
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 7.5px );
 -webkit-backdrop-filter: blur( 7.5px );
@@ -132,7 +132,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
-    background: rgba( 31, 145, 228, 0.55 );
+    /* background: rgba( 31, 145, 228, 0.55 ); */
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
