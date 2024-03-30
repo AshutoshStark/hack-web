@@ -5,10 +5,10 @@ import React from 'react'
 import TypeIt from 'typeit-react';
 
 const Tool = () => {
-
+  
   return (
     <Container>
-        <p>
+      <p className='heading_style'>Tools</p>
         <TypeIt
         options={{
             strings: [`<br/>Web development tools, often shortened to "dev tools", are a collection of software that assist developers in building and maintaining websites. They differ from website builders and IDEs (Integrated Development Environments) because they focus on inspecting and modifying existing websites, rather than directly creating them from scratch.
@@ -34,7 +34,6 @@ const Tool = () => {
             waitUntilVisible: true,
         }}
         />
-</p>
     </Container>
   )
 }
@@ -42,23 +41,34 @@ const Tool = () => {
 const Container = styled.div`
 p{
     height: 80%;
-    color: white;
+    color: #ffffff;
 }
-font-size: .8rem;
+font-size: 1rem;
 padding: 1rem;
-width: 75vw;
-color: white;
+width: 65vw;
+color: #ffffff;
 height: 65vh;
-background: rgba( 255, 129, 17, 0.15 );
+margin: 5px;
+/* background: rgba( 144, 19, 254, 0.6 ); */
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 10px );
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 display: flex;
+flex-direction: column;
 align-items: center;
-flex-direction: row;
 overflow-y: scroll;
+
+.heading_style{
+  text-align: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #ffffff;
+}
 `
 
 export default Tool

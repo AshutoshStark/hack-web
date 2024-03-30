@@ -5,7 +5,8 @@ html,
 body,
 #root {
   height: 100%;
-  background: #29250e;
+  /* background: #29250e; */
+  background: url(../public/assets/endless.png) no-repeat center center/cover;
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +19,7 @@ body,
   border: 3px solid transparent;
   background-clip: content-box;
   border-radius: 50px;
-background: #603f12;
+background: #1f1fc8;
 box-shadow:  20px 20px 60px #524a0f,
              -20px -20px 60px #6e4d15;
 }

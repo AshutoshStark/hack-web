@@ -7,42 +7,25 @@ import TypeIt from 'typeit-react';
 const Road = () => {
   return (
     <Container>
-        <p>
+      <p className='heading_style'>Understanding Web3 and Blockchain:</p>
+      
         <TypeIt
         options={{
-            strings: [`The roadmap for web development can vary depending on what area you want to specialize in, but generally, it involves:<br/><br/>
-
-            1. Learning the Fundamentals:<br/><br/>
-            
-            HTML, CSS, and JavaScript:<br/>These are the foundational languages for building web pages. HTML provides structure, CSS styles the look and feel, and JavaScript adds interactivity.<br/>
-            Understanding Web Technologies:<br/>Get familiar with how the web works, including things like HTTP requests, browsers, and web servers.<br/>
-            
-            2. Choosing a Path:
-            
-            Front-End Development:<br/>Focuses on the visual aspects and user experience of a website. You'll delve deeper into CSS frameworks like Bootstrap or Tailwind CSS and JavaScript libraries like React or Angular.<br/>
-            Back-End Development:<br/>Deals with the server-side logic and functionalities of a web application. This involves learning a server-side programming language like Python, Java, or Node.js, and understanding databases like SQL or NoSQL.<br/>
-            Full-Stack Development:<br/>Involves both front-end and back-end development, allowing you to build entire web applications.<br/>
-            
-            3. Additional Skills:
-            
-            Version Control Systems (Git):<br/>Learn how to track code changes and collaborate with others. <br/>
-            Testing and Debugging:<br/> Ensure your code functions as expected and identify and fix errors.<br/>
-            Deployment:<br/>Understand how to publish your website or web application online.<br/>
-            
-            Resources:
-            
-            There are many resources available to help you on your web development journey. Here are a few to get you started:
-            
-            Online Roadmaps:<br/>Websites like offer interactive roadmaps that you can customize based on your goals.<br/>
-            Online Courses:<br/>Platforms like Coursera, edX, and Udemy offer a wide range of web development courses for beginners and experienced developers alike.<br/>
-            Books and Tutorials:<br/>Many great books and tutorials are available to learn specific technologies and concepts.<br/>
-            
-            Remember, consistent practice is key to mastering web development. Start with small projects and gradually build your skills and portfolio.`],
+            strings: [`Fundamentals: <br>Start by grasping core blockchain concepts like decentralization, consensus mechanisms (proof of work, proof of stake), and smart contracts. Resources like online articles, documentaries, or courses from platforms like Coursera or edX can be a good starting point.<br>
+            Deep Dive: Explore specific blockchains like Ethereum, the leading platform for Web3 development. Learn about popular decentralized applications (dApps) built on Ethereum and how they function.<br>
+            Stay Updated: The Web3 space is constantly evolving. Follow industry publications, attend online meetups, and engage with online communities to stay current on the latest trends and developments.<br><br>
+            Becoming a Web3 Developer:
+            <br>
+            Blockchain Basics: Build a solid foundation in blockchain technology. This includes understanding distributed ledgers, cryptography, and different blockchain architectures.<br>
+            Programming Languages: Learn languages like Solidity, the primary language for writing smart contracts on Ethereum. Familiarity with Javascript is also beneficial.<br>
+            Web3 Frameworks: Explore frameworks like Truffle or Hardhat that streamline Web3 development.<br>
+            Decentralized App Development: Learn how to build dApps. Start with tutorials and progress to building your own simple dApps to solidify your understanding.<br>
+            Practice and Contribute: Practice is key! Contribute to open-source Web3 projects to gain real-world experience and build your developer portfolio.`],
             speed: 1,
             waitUntilVisible: true,
         }}
         />
-    </p>
+    
     </Container>
   )
 }
@@ -50,23 +33,34 @@ const Road = () => {
 const Container = styled.div`
 p{
     height: 80%;
-    color: white;
+    color: #ffffff;
 }
-font-size: .8rem;
+font-size: 1rem;
 padding: 1rem;
-width: 75vw;
-color: white;
+width: 65vw;
+color: #ffffff;
 height: 65vh;
-background: rgba( 255, 129, 17, 0.15 );
+margin: 5px;
+/* background: rgba( 144, 19, 254, 0.6 ); */
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 10px );
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 display: flex;
+flex-direction: column;
 align-items: center;
-flex-direction: row;
 overflow-y: scroll;
+
+.heading_style{
+  text-align: center;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #ffffff;
+}
 `
 
 export default Road
