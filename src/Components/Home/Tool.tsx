@@ -1,7 +1,4 @@
-import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from '@google/generative-ai';
-import { Children, useEffect, useState } from 'react';
 import styled from 'styled-components'
-import React from 'react'
 import TypeIt from 'typeit-react';
 
 const Tool = () => {
