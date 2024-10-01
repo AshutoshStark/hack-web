@@ -13,8 +13,8 @@ const UserWelcome = () => {
   const { wavesurfer, isReady, isPlaying, currentTime } = useWavesurfer({
     container: containerRef,
     url: 'assets/home.mp3',
-    waveColor: 'purple',
-    height: 100,
+    waveColor: 'red',
+    height: 10,
   })
 
   const onPlayPause = () => {
