@@ -1,11 +1,37 @@
+import { useWavesurfer } from '@wavesurfer/react';
+import { useRef, useState } from 'react';
 import styled from 'styled-components'
 import TypeIt from 'typeit-react';
 
 const Tool = () => {
+
+  const [toggle,setToggle]=useState<boolean>(true)
+
+  const containerRef1 = useRef(null)
+
+  const { wavesurfer, isReady, isPlaying, currentTime } = useWavesurfer({
+    container: containerRef1,
+    url: toggle ? 'assets/tools.mp3' : '',
+    waveColor: 'red',
+    height: 0,
+  })
+
+  const onPlayPause = () => {
+    wavesurfer && wavesurfer.playPause()
+  }
   
   return (
     <Container>
+      <div className='speech'>
+  <button onClick={()=>setToggle(!toggle)}>
+        {toggle ? 'English' : 'Hindi'}
+      </button>
+  <button onClick={onPlayPause}>
+        {isPlaying ? 'Pause' : 'Play'}
+      </button>
+</div>
       <p className='heading_style'>Tools</p>
+
         <TypeIt
         options={{
             strings: [`<br/>Web development tools, often shortened to "dev tools", are a collection of software that assist developers in building and maintaining websites. They differ from website builders and IDEs (Integrated Development Environments) because they focus on inspecting and modifying existing websites, rather than directly creating them from scratch.
@@ -36,6 +62,26 @@ const Tool = () => {
 }
 
 const Container = styled.div`
+
+.speech{
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  
+  button{
+    color:white;
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+}
+
 p{
     height: 80%;
     color: #ffffff;

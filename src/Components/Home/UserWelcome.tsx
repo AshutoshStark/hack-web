@@ -6,15 +6,15 @@ import { useWavesurfer } from '@wavesurfer/react';
 
 const UserWelcome = () => {
 
-  const text = "Blockchain and Web 3 are intertwined concepts shaping the future of the internet. Here's a quick breakdown: Blockchain: Imagine a public ledger everyone can see but no one can tamper with. That's a blockchain in essence. It's a secure distributed database that stores information in 'blocks' chained together chronologically. Cryptocurrencies like Bitcoin use blockchain to track ownership transparently. Web 3:  The current internet (Web 2.0) is dominated by large companies controlling your data. Web 3 aims to be more decentralized, giving users more control. Blockchain plays a key role here. Imagine owning your online identity and data, and interacting with applications directly, without a middleman. Here's how they connect: Decentralization: Blockchain facilitates a peer-to-peer web, where users interact directly, cutting out centralized control. Ownership: Web 3 leverages blockchain to give users ownership of their data and digital assets. Security: Blockchain's tamper-proof nature enhances security and trust in Web 3 applications. Think of it this way: Web 2.0 is like renting an apartment from a landlord. Web 3 is like owning your own home, with blockchain acting as the secure deed. It's early days: Web 3 is still under development, but it has the potential to revolutionize how we interact online.  Think secure online marketplaces, censorship-resistant communication, and a more democratic internet."
+  const [toggle,setToggle]=useState<boolean>(true)
 
   const containerRef = useRef(null)
 
   const { wavesurfer, isReady, isPlaying, currentTime } = useWavesurfer({
     container: containerRef,
-    url: 'assets/home.mp3',
+    url: toggle ? 'assets/home.mp3' : 'assets/homeHindi.mp3',
     waveColor: 'red',
-    height: 10,
+    height: 0,
   })
 
   const onPlayPause = () => {
@@ -24,7 +24,9 @@ const UserWelcome = () => {
   return (
     <Container>
 <div className='speech'>
-  <p>English</p>
+  <button onClick={()=>setToggle(!toggle)}>
+        {toggle ? 'English' : 'Hindi'}
+      </button>
   <button onClick={onPlayPause}>
         {isPlaying ? 'Pause' : 'Play'}
       </button>
